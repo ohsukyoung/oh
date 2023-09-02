@@ -1,0 +1,20 @@
+/* scroll */
+.scroll {position: fixed; right: 20px; top: 10px; z-index: 99998;}
+.scroll h3 {font-size: 12px; font-weight: 300; text-align: center;}
+.scroll span {position: relative; background: rgba(0,0,0,0.8); color: #fff; font-family: 'Roboto'; width: 47px; height: 47px; display:inline-block; text-align: center; line-height: 47px;}
+.scroll .scroll_top:before {content:''; position: absolute; left: 50%; top: -50px; transform: translateX(-50%);}
+
+
+/* layout */
+.road {overflow: hidden; position: fixed; height: 100vh; width: 15000px; background: red; }
+.sec1 {background: #111;}
+.sec2 {background: #222;}
+.sec3 {background: #333;}
+.sec4 {background: #444;}
+.sec5 {background: #555;}
+.sec6 {background: #666;}
+.sec7 {background: #777;}
+.sec8 {background: #888;}
+
+
+.container {float: left; height: 100vh; width: 1500px; line-height: 100vh; text-align: center; position: relative; font-size: 6vw; color: #EF8285; font-family: 'Sunflower', sans-serif;}

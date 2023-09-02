@@ -1,0 +1,240 @@
+/* scroll */
+.scroll {position: fixed; top: 1.8vh; right: 1.8vh; z-index: 100;}
+.scroll span {display: inline-block;  width: 50px; height: 50px; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; color: white;}
+
+/* layout */
+#contents {overflow: hidden; position: fixed; height: 100vh; width: 16700px;}
+.container {position: relative; height: 100%; width: 1600px; float: left;  height: 100%; color: #000; }
+#sec1 {width: 100vw;}
+#sec2 {}
+#sec3 {width: 3000px;}
+#sec4 {}
+#sec5 {width: 5400px;}
+#sec6 {width: 2500px;}
+#sec7 {}
+
+
+/* color:#2f4f4f darkslategray #8fbc8f darkseagreen */
+/* sec1 */
+#sec1:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+#sec1 .nav {position: absolute; top: 0; left: 0; width: 6vh; height: 100%;}
+#sec1 .chapter {position: absolute; top: 0; width: 6vh; height: 100%;}
+#sec1 .chapter .cap_home {margin-top: 1.8vh; margin-left: 1.8vh; font-family: 'Song Myung', serif; font-size: 2vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+#sec1 .chapter .cap_sep {margin-top: 0.5vh; margin-left: 1.8vh; font-family: 'Arapey', serif; font-weight: 700; font-size: 1.8vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+#sec1 .chapter .cap_dec {margin-top: 0.5vh; margin-left: 1.8vh; font-family: 'Arapey', serif; font-weight: 400; font-size: 1.8vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+#sec1 .nav .index {position: absolute; bottom: 0; left: 1.8vh;}
+#sec1 .nav .index ul li {margin-bottom: 10px; font-family: 'Arapey', serif; font-style: normal; font-weight: 600; font-size: 1.8vh; line-height: 1.8vh; writing-mode: vertical-rl}
+#sec1 .nav .index ul li:last-child {margin-bottom: 1.8vh;}
+#sec1 .nav .index ul li:hover {color: #8fbc8f;}
+
+#sec1 .home {position: absolute; top: 0; right: 5vh; width: 80%; height: 100%;}
+#sec1 .home:before {content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; height: 100%; transform: rotate(-55deg); background: rgba(0,0,0,0.4);}
+#sec1 .home .word1 {position: absolute; top: 0vh; left: 1.8vh; font-family: 'Song Myung', serif; font-size: 25vh; background: #fff;}
+#sec1 .home .word2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: 'Song Myung', serif; font-size: 25vh; background: #fff;}
+#sec1 .home .word3 {position: absolute; bottom: 1.8vh; right: 1.8vh;  font-family: 'Song Myung', serif; font-size: 25vh; background: #fff;}
+#sec1 .home .icon {position: absolute; top: 7.5vh; right: 8.8vh; width: 4vh; height: 2.8vh; background: #000;}
+#sec1 .home .icon i {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 2vh; color: #fff; line-height: 2.5vh;}
+#sec1 .home .word_left {position: absolute; bottom: 20vh; left: 8.8vh;}
+#sec1 .home .word_left span {position: relative; float: right; writing-mode: vertical-lr; font-family: 'Noto Serif KR', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec1 .home .word_right {position: absolute; top: 20vh; right: 8.8vh; display: none}
+#sec1 .home .word_right span {position: relative; float: right; writing-mode: vertical-lr; font-family: 'Arapey', serif; font-size: 3vh; line-height: 3vh;}
+#sec1 .home .word_bottom {position: absolute; bottom: 7.5vh; left: 1.8vh;}
+#sec1 .home .word_bottom .time {font-family: 'Arapey', serif; font-style: normal; font-weight: 600; font-size: 1.8vh; }
+
+
+/* sec2 */
+#sec2:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+.chapter {position: absolute; top: 0; width: 6vh; height: 100%;}
+.chapter .cap_home {margin-top: 1.8vh; margin-left: 1.8vh; font-family: 'Song Myung', serif; font-size: 2vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+.chapter .cap_sep {margin-top: 0.5vh; margin-left: 1.8vh; font-family: 'Arapey', serif; font-weight: 700; font-size: 1.8vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+.chapter .cap_dec {margin-top: 0.5vh; margin-left: 1.8vh; font-family: 'Arapey', serif; font-weight: 400; font-size: 1.8vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+
+#sec2 .imgs {position: relative; float: left; margin-left: 8vh; width: 55%; height: 100%; overflow: hidden;}
+#sec2 .imgs:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #ccc;}
+#sec2 .imgs img.bg1 {width: 99%; height: 100%; filter:grayscale(1);}
+#sec2 .imgs img.on {filter:grayscale(0);}
+
+#sec2 .imgs .img_wrapper {position: absolute; top: 20vh; width: 100%; height: 35vh; background-size: cover;  }
+#sec2 .imgs .img_wrapper figure.img_animate {position: absolute; top: 0; left: 13vh; width: 55vh; height: 35vh; overflow: hidden; }
+#sec2 .imgs .img_wrapper figure.img_animate img {display: block; position: absolute; top: -5vh; bottom: 0; left: 50%; transform: translateX(-688px); width: 1080px; /*transition:transform 1.5s cubic-bezier(.23,1,.32,1) 30ms;*/}
+
+#sec2 .book {position: relative; float: left; width:39%; height: 45%;} /*67>62*/
+#sec2 .book:before {content: ''; position: absolute; left: 1.8vh; right: 1.8vh; bottom: 0; width: auto ; height: 1px; background: #ccc;}
+#sec2 .book img {position: absolute; top: 8vh; right: 7vh; width: 18vh; height: auto;}
+#sec2 .book_dec {position: absolute; top: 5vh; left: 7vh;  width: 29vh; height: auto; font-family: 'Noto Serif KR', serif;}f
+#sec2 .book_dec p {font-family: 'Arapey', serif; font-size: 1.3vh;}
+#sec2 .book_dec em {display: inline-block; margin-top: 2vh; font-size: 2vh; transition: all 600ms cubic-bezier(0.250, 0.460, 0.450, 0.940);}
+/* cubic-bezier만드는 사이트 https://matthewlein.com/tools/ceaser  //easeOutQuad */
+#sec2 .book_dec em:hover {transform: scale(0.96);}
+#sec2 .book_dec span {display: inline-block; margin-top: 2vh; font-size: 1.8vh;}
+
+#sec2 .index2 {position: relative; float: left; width:39%; height: 55%; font-family: 'Arapey', serif; font-size: 2vh;}
+#sec2 .index2:before {content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; height: 100%; transform: rotate(-55deg); background: rgba(0,0,0,0.4);}
+#sec2 .index2 .in_word1 {position: absolute; top: 8vh; left: 8vh;}
+#sec2 .index2 .in_word2 {position: absolute; bottom: 8vh; right: 8vh;}
+#sec2 .index2 ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; font-size: 3vh;}
+#sec2 .index2 ul li {display: block; margin-bottom: 1.8vh;}
+
+
+/* sec3 */
+#sec3:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+#sec3 .me {position: relative; float: left; width: 50%; height: 100%;}
+#sec3 .me:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #444;}
+#sec3 .me_wrap {position: absolute; top: 25vh; left: 20vh;}
+#sec3 .me_wrap img {position: absolute; top: 5vh; left: 32vh; width: 25vh; height: 25vh; z-index: -50;}
+#sec3 .me_wrap > span {position:relative; float: left; font-family: 'Noto Serif KR', serif; font-size: 8vh; line-height: 12vh; z-index: 100;}
+#sec3 .me_wrap .m2_wrap {position: absolute; top: 0; left: 62vh; width: 70vh; height: 10vh; background: #ccc;}
+#sec3 .me_wrap .m2_wrap > span {position: absolute; top: 0; left: 0; visibility: hidden; line-height: 12vh;}
+#sec3 .me_wrap .m2_wrap > span.on {visibility: visible;}
+#sec3 .me_wrap .m2_wrap > span.m1 {font-family: 'Song Myung', serif; font-size: 8vh;}
+#sec3 .me_wrap .m2_wrap > span.m2 {font-family: 'Malgun Gothic'; font-size: 8vh;}
+#sec3 .me_wrap .m2_wrap > span.m3 {font-family: 'Arapey', serif; font-size: 6vh; text-shadow: -1px 0 #000;}
+#sec3 .me_wrap .m2_wrap > span.m4 {font-family: 'Noto Serif KR', serif; font-size: 8vh; }
+#sec3 .me2 {position: relative; float: left; width: 50%; height: 100%;}
+#sec3 .me2 .motion {position: relative; float: left; margin-left: 10%; width: 50%; height: 50%;}
+#sec3 .me2 .motion:before {content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; height: 100%; transform: rotate(60deg); background: rgba(0,0,0,0.4);}
+#sec3 .me2 .motion .m_word1 {position: absolute; top: 8vh; right: 8vh;}
+#sec3 .me2 .motion .m_word2 {position: absolute; bottom: 8vh; left: 8vh;}
+#sec3 .me2 .m_text1 {position: relative; float: left; width: 35%; height: 50%;}
+#sec3 .me2 .m_text1 p {position: absolute; bottom: 8vh; left: 5vh; right: 5vh; font-family: 'Noto Serif KR', serif; font-size: 2vh;}
+#sec3 .me2 .date {position: relative; float: left; width:30%; height: 50%; }
+#sec3 .me2 .date .d_wrap {position: absolute; bottom: 1.8vh; left: 1.8vh; font-family: 'Arapey', serif; font-size: 20vh; line-height: 13vh; letter-spacing: -1.5vh;}
+#sec3 .me2 .m_text2 {position: relative; float: left; padding-bottom: 1.8vh; width: 30%; height: 50%;}
+#sec3 .me2 .m_text2 p {position: absolute; top: 8vh; left: 5vh; right: 5vh; font-family: 'Noto Serif KR', serif; font-size: 2vh;}
+#sec3 .me2 .m_img {position: relative; float: left; width: 35%; height: 50%;}
+#sec3 .me2 .m_img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/* sec4 */
+#sec4:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+#sec4 .s_text {position:relative; float: left; width: 100%; height: 22vh; font-family: 'Arapey', serif; font-size: 8vh; line-height: 20vh; text-align: center;}
+#sec4 .graph {position: relative; float: left; width: 100%; height: 50vh;}
+#sec4 .graph .skill_wrap1 {position: absolute; top: 0; left: 11vh; width: 43%; height: 100%;}
+#sec4 .graph .skill_wrap1 .g1 {position: absolute; right: 9vh; top: 1vh; width: 34vh; height: 34vh; z-index: 150;}
+#sec4 .graph .skill_wrap1 .g1 p {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: 'Song Myung', serif; font-size: 8vh; line-height: 5vh; font-weight: 900; color: #fff;}
+#sec4 .graph .skill_wrap1 .g1 p em {font-size: 5vh;}
+#sec4 .graph .skill_wrap1 .g1 p span {font-family: 'Arapey', serif; font-size: 8vh; line-height: 7vh;}
+#sec4 .graph .skill_wrap1 .g2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 30vh; height: 30vh; z-index: 100;}
+#sec4 .graph .skill_wrap1 .g3 {position: absolute; left: 9vh; bottom: 1vh; width: 28vh; height: 28vh; z-index: 50; opacity: 0.7;}
+#sec4 .graph .skill_wrap1 .g3 p {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: 'Song Myung', serif; font-size: 8vh; line-height: 5vh; font-weight: 900; color: #fff;}
+#sec4 .graph .skill_wrap1 .g3 p em {font-size: 6vh;}
+#sec4 .graph .skill_wrap1 .g3 p span {font-family: 'Arapey', serif; font-size: 8vh; line-height: 7vh;}
+
+#sec4 .graph .skill_wrap2 {position: absolute; top: 0; right: 11vh; width: 43%; height: 100%;}
+#sec4 .graph .skill_wrap2 .g1 {position: absolute; left: 9vh; top: 1vh; width: 28vh; height: 28vh; z-index: 150;}
+#sec4 .graph .skill_wrap2 .g1 p {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: 'Song Myung', serif; font-size: 8vh; line-height: 5vh; font-weight: 900; color: #fff;}
+#sec4 .graph .skill_wrap2 .g1 p em {font-size: 6vh;}
+#sec4 .graph .skill_wrap2 .g1 p span {font-family: 'Arapey', serif; font-size: 7vh; line-height: 7vh;}
+#sec4 .graph .skill_wrap2 .g2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 30vh; height: 30vh; z-index: 100;}
+#sec4 .graph .skill_wrap2 .g3 {position: absolute; right: 9vh; bottom: 1vh; width: 34vh; height: 34vh; z-index: 50; opacity: 0.7;}
+#sec4 .graph .skill_wrap2 .g3 p {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: 'Song Myung', serif; font-size: 8vh; line-height: 5vh; font-weight: 900; color: #fff;}
+#sec4 .graph .skill_wrap2 .g3 p em {font-size: 5vh;}
+#sec4 .graph .skill_wrap2 .g3 p span {font-family: 'Arapey', serif; font-size: 5vh; line-height: 7vh;}
+
+#sec4 .btn_wrap {position: relative; float: left; width: 100%; height: 15vh;}
+#sec4 .btn_wrap svg {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 15vh; height: 100%;}
+
+/* sec5 */
+#sec5:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+#sec5 .work1 {position: relative; float: left; width: 1800px; height: 100%;}
+#sec5 .work1 h1.w_word {position: absolute; top: 0; left: 5vh; width: 20vh; height: 100%; overflow: hidden;}
+#sec5 .work1 h1.w_word .word_wrap {position: absolute; top: 0; left: 0; font-family: 'Arapey', serif; font-size: 17vh; writing-mode: vertical-lr;}
+#sec5 .work1 img.w_img {position: absolute; bottom: -3vh; left: 40vh; width: 75vh; height: auto;}
+#sec5 .work1 img.w_img_2 {position: absolute; top: 25vh; left: 100vh; width: 30vh; height: auto;}
+#sec5 .work1 .w_number {position: absolute; top: 18vh; left: 126vh; width: 18vh; height: 18vh; border-radius: 50%; background: #000;}
+#sec5 .work1 .w_number p {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: white; font-family: 'Arapey', serif; font-size: 10vh; font-weight: 900;}
+#sec5 .work1 .w_text {position: absolute; top: 50vh; right: 5vh; width: 40vh;}
+#sec5 .work1 .w_text p {display: block; font-family: 'Noto Serif KR', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec5 .work1 .w_text span {font-family: 'Arapey', serif; font-size: 1.8vh; line-height: 4vh;}
+#sec5 .work1 .w_text strong {display: block; font-family: 'Arapey', serif; font-size: 2.5vh; text-decoration: underline; line-height: 4vh;}
+
+#sec5 .work2 {position: relative; float: left; width: 1800px; height: 100%; background: #444;}
+#sec5 .work2 h1.w_word {position: absolute; top: 0; left: 5vh; width: 20vh; height: 100%; overflow: hidden;}
+#sec5 .work2 h1.w_word .word_wrap {position: absolute; top: 0; left: 0; font-family: 'Arapey', serif; font-size: 17vh; color: #fff; writing-mode: vertical-lr;}
+#sec5 .work2 img.w_img {position: absolute; top: 15vh; left: 35vh; width: 75vh; height: auto;}
+#sec5 .work2 img.w_img_2 {position: absolute; bottom: 1.8vh; left: 95vh; width: 40vh; height: auto;}
+#sec5 .work2 .w_number {position: absolute; bottom: 18vh; left: 126vh; width: 18vh; height: 18vh; border-radius: 50%; background: #fff;}
+#sec5 .work2 .w_number p {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #444; font-family: 'Arapey', serif; font-size: 10vh; font-weight: 900;}
+#sec5 .work2 .w_text {position: absolute; top: 27vh; right: 8vh; width: 40vh; color: #fff;}
+#sec5 .work2 .w_text p {display: block; font-family: 'Noto Serif KR', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec5 .work2 .w_text span {font-family: 'Arapey', serif; font-size: 1.8vh; line-height: 4vh;}
+#sec5 .work2 .w_text strong {display: block; font-family: 'Arapey', serif; font-size: 2.5vh; text-decoration: underline; line-height: 4vh;}
+
+#sec5 .work3 {position: relative; float: left; width: 1800px; height: 100%;}
+#sec5 .work3 h1.w_word {position: absolute; top: 0; left: 5vh; width: 20vh; height: 100%; overflow: hidden;}
+#sec5 .work3 h1.w_word .word_wrap {position: absolute; top: 0; left: 0; font-family: 'Arapey', serif; font-size: 17vh; writing-mode: vertical-lr; color: #444;}
+#sec5 .work3 img.w_img {position: absolute; top: 6vh; left: 35vh; width: 75vh; height: auto;}
+#sec5 .work3 img.w_img_2 {position: absolute; top: 29vh; left: 97vh; width: 49vh; height: auto;}
+#sec5 .work3 .w_number {position: absolute; top: 21vh; left: 136vh; width: 18vh; height: 18vh; border-radius: 50%; background: #444;}
+#sec5 .work3 .w_number p {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: white; font-family: 'Arapey', serif; font-size: 10vh; font-weight: 900;}
+#sec5 .work3 .w_text {position: absolute; top: 50vh; right: 5vh; width: 40vh;}
+#sec5 .work3 .w_text p {display: block; font-family: 'Noto Serif KR', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec5 .work3 .w_text span {font-family: 'Arapey', serif; font-size: 1.8vh; line-height: 4vh;}
+#sec5 .work3 .w_text strong {display: block; font-family: 'Arapey', serif; font-size: 2.5vh; text-decoration: underline; line-height: 4vh;}
+
+/* sec6 */
+#sec6:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+#sec6 h1 {position: absolute; top: 10vh; left: 10vh; font-family: 'Arapey', serif; font-size: 10vh; font-weight: 900;}
+#sec6 .ani1 {position: relative; float: left; width: 65vh; height: 100%; margin-left: 6vh; z-index: 100;}
+#sec6 .ani1 .ani_wrap {position: absolute; top: 30vh; left: 5%; width: 90%;}
+#sec6 .ani1 .ani_wrap h2 {position: relative; float: left; height: 8vh; margin-left: 5vh; font-family: 'Arapey', serif; font-size: 5vh; color: initial ;font-weight: 900; font-border: 1px solid #444;}
+#sec6 .ani1 .ani_wrap .a_box {position: relative; float: left; width: 40vh; height: 25vh; background: #ccc;}
+#sec6 .ani1 .ani_wrap .a_text {position: relative; float: left; height: auto;}
+#sec6 .ani1 .ani_wrap .a_text p {display: block; margin-top: 1vh; font-family: 'Noto Serif KR', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec6 .ani1 .ani_wrap .a_text p span {display: inline-block; text-decoration: underline; margin-top: 4vh;}
+
+#sec6 .ani2 {position: relative; float: left; width: 65vh; height: 100%; z-index: 100;}
+#sec6 .ani2 .ani_wrap {position: absolute; top: 40vh; width: 90%;}
+#sec6 .ani2 .ani_wrap h2 {position: relative; float: left; height: 8vh; margin-left: 15vh; font-family: 'Arapey', serif; font-size: 5vh; color: initial ;font-weight: 900; font-border: 1px solid #444;}
+#sec6 .ani2 .ani_wrap .a_box {position: relative; float: left; width: 30vh; height: 25vh; margin-right: 1.8vh; background: #ccc;}
+#sec6 .ani2 .ani_wrap .a_text {position: relative; float: left; height: auto;}
+#sec6 .ani2 .ani_wrap .a_text p {display: block; font-family: 'Noto Serif KR', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec6 .ani2 .ani_wrap .a_text p span {display: inline-block; text-decoration: underline; margin-top: 4vh;}
+
+#sec6 .ani3 {position: relative; float: left; width: 65vh; height: 100%; z-index: 100;}
+#sec6 .ani3 .ani_wrap {position: absolute; top: 15vh; width: 90%;}
+#sec6 .ani3 .ani_wrap .a_box {position: relative; float: right; right: -3vh; width: 30vh; height: 40vh; background: #ccc;}
+#sec6 .ani3 .ani_wrap h2 {position: relative; float: right; height: 8vh; font-family: 'Arapey', serif; font-size: 5vh; color: initial ;font-weight: 900; font-border: 1px solid #444;}
+#sec6 .ani3 .ani_wrap .a_text {position: relative; float: right; height: auto;}
+#sec6 .ani3 .ani_wrap .a_text p {display: block; font-family: 'Noto Serif KR', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec6 .ani3 .ani_wrap .a_text p span {display: inline-block; text-decoration: underline; margin-top: 4vh;}
+
+#sec6 .ani4 {position: relative; float: left; width: 65vh; height: 100%; z-index: 100;}
+#sec6 .ani4 .ani_wrap {position: absolute; top: 30vh; width: 90%;}
+#sec6 .ani4 .ani_wrap h2 {position: relative; float: left; height: 8vh; margin-left: 5vh; font-family: 'Arapey', serif; font-size: 5vh; color: initial ;font-weight: 900; font-border: 1px solid #444;}
+#sec6 .ani4 .ani_wrap .a_box {position: relative; float: left; width: 40vh; height: 25vh; margin-left: 10vh; background: #ccc;}
+#sec6 .ani4 .ani_wrap .a_text {position: relative; float: left; margin-left: 20vh; height: auto;}
+#sec6 .ani4 .ani_wrap .a_text p {display: block; margin-top: 1vh; font-family: 'Noto Serif KR', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec6 .ani4 .ani_wrap .a_text p span {display: inline-block; text-decoration: underline; margin-top: 4vh;}
+
+#sec6 .dot1 {position: absolute; bottom: -30vh; left: 5vh; width: 45vh; height: 45vh; border-radius: 50%; background: #4F00BC; z-index: 50;}
+#sec6 .dot2 {position: absolute; bottom: 50vh; left: 140vh; width: 20vh; height: 20vh; border-radius: 50%; background: #3AA17E; z-index: 50;}
+
+/* sec7 */
+#sec7 .c_top {position: relative; float: left; width: 70%; height: 100%; margin-right: 4vh;}
+#sec7 .c_top h1 {margin-top: 8vh; margin-left: 8vh; font-family: 'Noto Serif KR', serif; font-size: 5vh;}
+#sec7 .c_top form {margin-top: 6vh; margin-left: 8vh; width: 40vh; height: 20vh; font-family: 'Noto Serif KR', serif; font-size: 1.8vh; background: #ccc;}
+#sec7 .c_top .question {position: absolute; bottom: 10vh; left: 8vh; width: 40vh; height: 10vh;}
+#sec7 .c_top .question svg {position: absolute; bottom: 0; left: 0; width: 5vh;}
+#sec7 .c_top .question .q_wrap {position: absolute; top: 0; left: 5vh; width: 30vh; font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_top .question .q_wrap span {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_top .question span.q1 {position: absolute; top: 0; left: 0;}
+#sec7 .c_top .question span.q2 {position: absolute; top: 0; left: 10vh; font-weight: 900;}
+#sec7 .c_top .question span.q3 {position: absolute; top: 0; left: 20vh;}
+#sec7 .c_top .question span.q4 {position: absolute; top: 2.5vh; left: 0}
+#sec7 .c_bottom {position: relative; float: left; width: 25%; height: 100%; font-family: 'Arapey', serif; font-size: 2vh;}
+#sec7 .c_bottom .about {position: relative; float: left; margin-top: 14vh; width: 100%;}
+#sec7 .c_bottom .about strong {text-transform: uppercase; line-height: 4vh;}
+#sec7 .c_bottom .about p {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_bottom .about p b {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_bottom .contact {position: relative; float: left; margin-top: 6vh; width: 100%;}
+#sec7 .c_bottom .contact strong {text-transform: uppercase; line-height: 4vh;}
+#sec7 .c_bottom .contact p {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_bottom .contact p b {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_bottom .carti {position: relative; float: left; margin-top: 6vh; width: 100%;}
+#sec7 .c_bottom .carti strong {text-transform: uppercase; line-height: 4vh;}
+#sec7 .c_bottom .carti p {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_bottom .carti p b {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_bottom .career {position: relative; float: left; margin-top: 6vh; width: 100%;}
+#sec7 .c_bottom .career strong {text-transform: uppercase; line-height: 4vh;}
+#sec7 .c_bottom .career p {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}
+#sec7 .c_bottom .career p b {font-family: 'Noto Serif KR', serif; font-size: 1.8vh;}

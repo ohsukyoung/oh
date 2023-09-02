@@ -1,0 +1,553 @@
+/* layout */
+#contents {}
+#section1 {height: 3000px;}
+#section2 {height: 2350px;}
+#section3 {height: 2900px;}
+#section4 {height: 1600px;}
+#section5 {height: 3000px; background: #555;}
+#section6 {height: 3000px; background: #444;}
+
+
+/* scroll */
+.scroll {position: fixed; bottom: 1.8vh; left: 1.8vh; z-index: 100000;}
+.scroll span {display: inline-block; width: 50px; height: 50px; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; color: white; opacity: 1;}
+
+
+/* section1 */
+#sec1 {position: fixed; width: 99vw; height: 100vh;}
+#sec1:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+#sec1 .nav {position: absolute; top: 0; left: 0; width: 6vh; height: 100%;}
+#sec1 .chapter {position: absolute; top: 0; width: 6vh; height: 100%;}
+#sec1 .chapter .cap_home {margin-top: 1.8vh; margin-left: 1.8vh; font-family: 'Song Myung', serif; font-size: 2vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+
+#sec1 .home {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; height: 100%;}
+#sec1 .home:before {content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; height: 100%; transform: rotate(-70deg); background: rgba(0,0,0,0.4);}
+
+#sec1 .home > div {font-family: 'Song Myung', serif; font-size: 28vh; background: #fff;}
+#sec1 .home .word1 {position: absolute; top: 0vh; left: 15vh;}
+#sec1 .home .word2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#sec1 .home .word3 {position: absolute; bottom: 1.8vh; right: 15vh;}
+#sec1 .home .icon {position: absolute; top: 1.8vh; right: 3.6vh; width: 50px; height: 50px; background: #000;}
+#sec1 .home .icon i {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 2vh; color: #fff; line-height: 2.5vh;}
+#sec1 .home .word_left {position: absolute; bottom: 15vh; left: 15vh;}
+#sec1 .home .word_left span {position: relative; float: right; writing-mode: vertical-lr; font-family: 'Nanum Myeongjo', serif; font-size: 2.5vh; line-height: 3vh;}
+#sec1 .home .word_bottom {position: absolute; bottom: 1.8vh; right: 3.6vh;}
+#sec1 .home .word_bottom .time {float: right; font-family: 'Frank Ruhl Libre', serif; font-style: normal; font-weight: 600; font-size: 1.8vh;}
+
+/* section2 */
+#sec2 {position: fixed; top: 0; left: 100%; width: 1500px; height: 100vh;}
+#sec2:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+.chapter {position: absolute; top: 0; width: 6vh; height: 100%;}
+.chapter .cap_home {margin-top: 1.8vh; margin-left: 1.8vh; font-family: 'Song Myung', serif; font-size: 2vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+.chapter .cap_sep {margin-top: 0.5vh; margin-left: 1.8vh; font-family: 'Frank Ruhl Libre', serif; font-weight: 700; font-size: 1.8vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+.chapter .cap_dec {margin-top: 0.5vh; margin-left: 1.8vh; font-family: 'Frank Ruhl Libre', serif; font-weight: 400; font-size: 1.8vh; line-height: 1.8vh; writing-mode: vertical-rl;}
+
+#sec2 .imgs {position: relative; float: left; margin-left: 8vh; width: 55%; height: 100%; overflow: hidden;}
+#sec2 .imgs:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #ccc;}
+#sec2 .imgs img.bg1 {width: 97%; height: 100%;}
+
+#sec2 .imgs .img_wrapper {position: absolute; top: 20vh; width: 100%; height: 35vh; background-size: cover;  }
+#sec2 .imgs .img_wrapper figure.img_animate {position: absolute; top: 0; left: 13vh; width: 55vh; height: 35vh; overflow: hidden; }
+#sec2 .imgs .img_wrapper figure.img_animate img {display: block; position: absolute; top: -5vh; bottom: 0; left: 50%; transform: translateX(-688px); width: 1080px;}
+
+#sec2 .book {position: relative; float: left; width:39%; height: 45%; margin-left: 0.5%;}
+#sec2 .book:before {content: ''; position: absolute; left: 1.8vh; right: 1.8vh; bottom: 0; width: auto ; height: 1px; background: #ccc;}
+#sec2 .book .book_dec {position: relative; float: left; width: 59%; height: 100%; margin-left: 1%; font-family: 'Nanum Myeongjo', serif; font-size: 1.6vh;}
+#sec2 .book_dec .b_title {position: absolute; top: 8vh; left: 7vh; width: 70%; height: 2.5vh; font-size: 1.8vh; font-weight: 600; color: #444; overflow: hidden;}
+#sec2 .book_dec .b_title > span {position: relative; float: left; opacity: 1; transform: translateY(20px); transition: transform .4s ease-in-out;}
+#sec2 .book_dec p {position: absolute; top: 12vh; left: 7vh; width: 70%; font-size: 1.6vh; text-align: justify; opacity: 1; transform: translateY(10px); transition: all .6s 1s ease;}
+/* cubic-bezier만드는 사이트 https://matthewlein.com/tools/ceaser  //easeOutQuad*/
+#sec2 .book_dec .b_bottom {position: absolute; bottom: 7vh; right: 4.9vh; font-size: 1.7vh; opacity: 1; transform: translateX(-10px); transition: all .6s 1s ease;}
+#sec2 .book .imgs2 {position: relative; float: left; width: 39%; height: 100%;}
+#sec2 .book .imgs2 img {position: absolute; top: 8vh; right: 7vh; width: 19vh; height: auto;}
+
+#sec2 .index2 {position: relative; float: left; width:39%; height: 55%; margin-left: 0.5%; font-family: 'Frank Ruhl Libre', serif; font-size: 2vh;}
+#sec2 .index2:before {content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; height: 100%; transform: rotate(-55deg); background: rgba(0,0,0,0.4);}
+#sec2 .index2 .in_word1 {position: absolute; top: 8vh; left: 8vh;}
+#sec2 .index2 .in_word2 {position: absolute; bottom: 8vh; right: 8vh;}
+#sec2 .index2 ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; font-size: 3vh;}
+#sec2 .index2 ul li {display: block; margin-bottom: 1.8vh;}
+
+/* section3 */
+#sec3 {position: fixed; top: 0; left: 100%; width: 3000px; height: 100vh;}
+#sec3:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+#sec3 .me {position: relative; float: left; width: 50%; height: 100%;}
+#sec3 .me:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #444;}
+#sec3 .me_wrap {position: absolute; top: 25vh; left: 18vh; width: 1100px; height: 450px;}
+#sec3 .me_wrap:hover {cursor:  e-resize;}
+#sec3 .me_wrap .img1 {width: 220px; position: absolute; z-index: 5;}
+#sec3 .me_wrap img {position: absolute; top: 0; left: 33vh;}
+#sec3 .me_wrap .me_t {font-family: 'Nanum Myeongjo', serif; font-size: 8vh; line-height: 12vh; z-index: 10;}
+#sec3 .me_wrap .me_t p {display: block;}
+#sec3 .me_wrap .me_t .i {position: absolute; top: 110px; left: 310px; color: transparent; -webkit-text-stroke: 1px #000;}
+#sec3 .me_wrap .me_t .ion {color: #000; -webkit-text-stroke: 1px #000;}
+#sec3 .me_wrap .m2_wrap {position: absolute; top: 0; left: 62vh; width: 70vh; height: 10vh;}
+#sec3 .me_wrap .m2_wrap > span {position: absolute; top: 0; left: 0; visibility: hidden; line-height: 12vh;}
+#sec3 .me_wrap .m2_wrap > span.on {visibility: visible;}
+#sec3 .me_wrap .m2_wrap > span.m1 {font-family: 'Song Myung', serif; font-size: 8vh;}
+#sec3 .me_wrap .m2_wrap > span.m2 {font-family: 'Malgun Gothic'; font-size: 8vh;}
+#sec3 .me_wrap .m2_wrap > span.m3 {font-family: 'Frank Ruhl Libre', serif; font-size: 6vh; text-shadow: -1px 0 #000;}
+#sec3 .me_wrap .m2_wrap > span.m4 {font-family: 'Nanum Myeongjo', serif; font-size: 8vh; color: transparent; -webkit-text-stroke: 1px #000;}
+#sec3 .me2 {position: relative; float: left; width: 50%; height: 100%;}
+#sec3 .me2 .motion {position: relative; float: left; margin-left: 10%; width: 50%; height: 50%;}
+#sec3 .me2 .motion .line:before {content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; height: 100%; transform: rotate(60deg); background: rgba(0,0,0,0.4);}
+#sec3 .me2 .motion .m_word1 {position: absolute; top: 8vh; right: 8vh;}
+#sec3 .me2 .motion .m_word2 {position: absolute; bottom: 8vh; left: 8vh;}
+#sec3 .me2 .m_text1 {position: relative; float: left; width: 35%; height: 50%;}
+#sec3 .me2 .m_text1 p {position: absolute; bottom: 8vh; left: 5vh; right: 5vh; font-family: 'Nanum Myeongjo', serif; font-size: 2vh;}
+#sec3 .me2 .date {position: relative; float: left; width:30%; height: 50%; }
+#sec3 .me2 .date .d_wrap {position: absolute; bottom: 1vh; left: 1.8vh; font-family: 'Frank Ruhl Libre', serif; font-size: 20vh; font-weight: 400; line-height: 15vh; letter-spacing: -2.5vh;}
+#sec3 .me2 .date .d_wrap p.d1 {position: relative; float: left; width: 100%; overflow: hidden;}
+#sec3 .me2 .date .d_wrap p.d1 > span {position: relative; float: left; transform: translateY(150px); opacity: 1; transition: transform .4s ease-in-out;}
+#sec3 .me2 .date .d_wrap p.d2 {position: relative; float: left; width: 100%; overflow: hidden;}
+#sec3 .me2 .date .d_wrap p.d2 > span {position: relative; float: left; transform: translateY(150px); opacity: 1; transition: transform .4s ease-in-out;}
+#sec3 .me2 .date .d_wrap p.d3 {position: relative; float: left; overflow: hidden;}
+#sec3 .me2 .date .d_wrap p.d3 > span {position: relative; float: left; transform: translateY(150px); opacity: 1; transition: transform .4s ease-in-out;}
+#sec3 .me2 .m_text2 {position: relative; float: left; padding-bottom: 1.8vh; width: 30%; height: 50%;}
+#sec3 .me2 .m_text2 p {position: absolute; top: 8vh; left: 5vh; right: 5vh; font-family: 'Nanum Myeongjo', serif; font-size: 2vh;}
+#sec3 .me2 .m_img {position: relative; float: left; width: 35%; height: 50%;}
+#sec3 .me2 .m_img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/* section4 */
+#sec4 {position: fixed; top: 0; left: 100%; width: 1800px; height: 100vh;}
+#sec4:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+
+#sec4 .site_title {position: absolute; top: 0; left: 0; width: 600px; height: 100vh;}
+#sec4 .site_title .st_bom {position: absolute; left: 1.8vh; bottom: 1vh;}
+#sec4 .site_title .st_bom .st_bom1 {display: block; font-size: 20vh; line-height: 15vh; font-family: 'Frank Ruhl Libre', serif; overflow: hidden; letter-spacing: -.06em;}
+#sec4 .site_title .st_bom .st_bom2 {display: block; font-size: 20vh; line-height: 15vh; font-family: 'Frank Ruhl Libre', serif; overflow: hidden; letter-spacing: -.06em;}
+#sec4 .site_title .st_bom .st_bom1 > span {position: relative; float: left;}
+#sec4 .site_title .st_bom .st_bom2 > span {position: relative; float: left;}
+#sec4 .site_wrap {position: absolute; top: 0; left: 0; width: 90%; height: 100%; margin-left: 6vh;}
+#sec4 .site_wrap .s1 {position: relative; float: left; width: 30%; height: 50%;}
+#sec4 .site_wrap .s2 {position: relative; float: left; width: 28%; height: 50%;}
+#sec4 .site_wrap .s2 p {position: absolute; bottom: 8vh; left: 5vh; right: 5vh; font-family: 'Nanum Myeongjo', serif; font-size: 2vh;}
+#sec4 .site_wrap .s3 {position: relative; float: left; width: 33%; height: 50%;}
+#sec4 .site_wrap .s3 .skill-wrap .skill ul.about {position: absolute; bottom: 7vh;}
+#sec4 .site_wrap .s3 .skill-wrap .skill ul.about li.pie {position: relative; float: left; width: 25vh; height: 25vh;}
+#sec4 .site_wrap .s3 .skill-wrap .skill ul.about li.pie a {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#sec4 .site_wrap .s3 .skill-wrap .skill ul.about li.pie a strong {position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); font-size: 80px; line-height: 1.1; font-weight: 200;}
+#sec4 .site_wrap .s3 .skill-wrap .skill ul.about li.pie a span {font-size: 14px; display: block; margin-top: 90px;}
+#sec4 .site_wrap .s3 .skill-wrap .skill ul.about li.pie canvas {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#sec4 .site_wrap .s4 {position: relative; float: left; width: 73%; height: 50%;}
+#sec4 .site_wrap .s4 .skill-wrap .skill ul.about {position: absolute; right: 0; top: 7vh;}
+#sec4 .site_wrap .s4 .skill-wrap .skill ul.about li.pie {position: relative; float: left; width: 25vh; height: 25vh;}
+#sec4 .site_wrap .s4 .skill-wrap .skill ul.about li.pie a {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#sec4 .site_wrap .s4 .skill-wrap .skill ul.about li.pie a strong {position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); font-size: 80px; line-height: 1.1; font-weight: 200;}
+#sec4 .site_wrap .s4 .skill-wrap .skill ul.about li.pie a span {font-size: 14px; display: block; margin-top: 90px;}
+#sec4 .site_wrap .s4 .skill-wrap .skill ul.about li.pie canvas {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#sec4 .site_wrap .s5 {position: relative; float: left; width: 26%; height: 50%;}
+#sec4 .site_wrap .s5 p {position: absolute; bottom: 8vh; left: 5vh; right: 5vh; font-family: 'Nanum Myeongjo', serif; font-size: 2vh;}
+
+/* section5 */
+#sec5_1 {position: fixed; top: 0; left: 100%; width: 1100px; height: 100vh;}
+/*#sec5_1:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}*/
+
+#sec5_1 .site_title {float: left; width: 1100px; height: 100vh; bottom: 20px;}
+#sec5_1 .site_title .st_bom {position: absolute; left: 1.8vh; bottom: 1vh;}
+#sec5_1 .site_title .st_bom .st_bom1 {display: block; font-size: 20vh; line-height: 15vh; font-family: 'Frank Ruhl Libre', serif; overflow: hidden; letter-spacing: -.06em;}
+#sec5_1 .site_title .st_bom .st_bom2 {display: block; font-size: 20vh; line-height: 15vh; font-family: 'Frank Ruhl Libre', serif; overflow: hidden; letter-spacing: -.06em;}
+#sec5_1 .site_title .st_bom .st_bom1 > span {position: relative; float: left;}
+#sec5_1 .site_title .st_bom .st_bom2 > span {position: relative; float: left;}
+#sec5_1 .site_title .st_img {margin-left: 75vh; margin-right: 16vh; padding-top: 10vh;}
+#sec5_1 .site_title .st_img svg {height: 80vh; padding-left: 1px}
+#sec5_1 .site_title .st_img svg .st0 {fill: #000;}
+#sec5_1 .site_title .st_img .after {position: absolute; left: 64vh; top: 50%; transform: translateY(-50%); text-transform: uppercase; font-size: 16px;}
+
+#sec5_2 {position: fixed; top: 0; left: 100%; width: 11000px; height: 100vh; background: lightblue;}
+#sec5_2:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+
+#sec5_2 .site_wrap {float: left; overflow: hidden;}
+#sec5_2 .site1 {position: relative; float: left; width: 2200px; height: 100vh; }
+#sec5_2 .site2 {position: relative; float: left; width: 2200px; height: 100vh;}
+#sec5_2 .site3 {position: relative; float: left; width: 2200px; height: 100vh; }
+#sec5_2 .site4 {position: relative; float: left; width: 2200px; height: 100vh; }
+#sec5_2 .site5 {position: relative; float: left; width: 2200px; height: 100vh; }
+
+
+.sit .sTitle {position: relative; margin-left: 8vh; font-family: 'Song Myung', serif; font-size: 11vh; line-height: 1.8vh; writing-mode: vertical-rl; white-space: nowrap;  letter-spacing: -.06em;}
+.sit .sTitle:after {content: ''; width: 1px; height: 1500px; background: #000; position: absolute; right: 10px; top: -1505px;}
+.sit .sTitle:before {content: ''; width: 1px; height: 1500px; background: #000; position: absolute; right: 10px; bottom: -1505px;}
+.sit .number {position: absolute; left: 128vh; top: -22vh; font-family: 'Staatliches', cursive; font-size: 77vh; color: #efefef; opacity: 0.6; font-weight: 900; z-index: -1; letter-spacing: -0em; font-weight: bold;}
+.sit .sbox3 {position: absolute; left: 145vh; top: 40vh; width: 270px; height: 270px; background:#000; border-radius: 50%; text-align: center; line-height: 300px; z-index: 5;}
+.sit .sbox3 a {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: white; font-family: 'Lato', sans-serif; font-size: 4vh; line-height: 4vh; font-weight: 100;}
+.sit .sbox4 {position: absolute; right: 10%; top: 20%; width: 350px; height: 350px; color: #838383; font-family: 'Nanum Myeongjo', serif; text-align: justify; font-size: 18px;}
+.sit .sbox4 p {display: inline-block; color: #838383; font-family: 'Nanum Myeongjo', serif; text-align: justify; font-size: 18px; margin-bottom: 10px; opacity: 1;
+    transform: translateX(-10px);
+    transition: all .6s 1s ease;}
+
+.sit .sbox4 span {display: inline-block; font-family: 'Nanum Myeongjo', serif; text-align: left;}
+.sit .sbox4 .bt {position: absolute; bottom: 0; width: 100%;display: grid; color: #111;}
+.sit .sbox4 .bt a {text-decoration: none; color: inherit;}
+.sit .sbox4 .bt a.cta {position: relative; margin: auto; padding: 14px 22px; transition: all .2s ease;}
+.sit .sbox4 .bt a.cta:before {content: ''; position: absolute; top: 0; left: 0; display: block; border-radius: 28px; background: rgba(87, 176, 216, 0.5); width: 56px; height: 56px; transition: all .3s ease;}
+.sit .sbox4 .bt a span {position: relative; font-family: 'Nanum Myeongjo', serif; font-size: 16px; font-weight: 900; letter-spacing: .25em; text-transform: uppercase; vertical-align: middle;}
+.sit .sbox4 .bt a svg {position: relative; top: 0; margin-left: 10px; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: #111; stroke-width: 2; transform: translateX(-5px); transition: all .3s ease;}
+.sit .sbox4 .bt:hover a.cta:before {width: 100%; background: rgba(87, 176, 216, 1);}
+.sit .sbox4 .bt:hover a svg {transform: translateX(0)}
+.sit .sbox4 .bt:hover a svg:active {transform: scale(.96)}
+
+#sec5_2 .site1 .sbox1 {position: absolute; left: 48vh; top: 20vh; width: 80vh; height: 60vh; background: url(../img/cp1.png) no-repeat;  background-size: contain;}
+#sec5_2 .site1 .sbox2 {position: absolute; left: 107vh; top: 45.5vh; width: 47vh; height: 37vh; background: url(../img/cp1_2.png) no-repeat; background-size: contain; z-index: 5; opacity: 1; transition: all 0.6s ease-out;}
+#sec5_2 .site1 .sbox4 p {opacity: 1; transform: translateY(10px); transition: all .6s 1s ease;}
+#sec5_2 .site1 .sbox4 .bt a.cta {opacity: 1; transform: translateX(-10px); transition: all .6s 1.3s ease;}
+#sec5_2 .site2 .sbox1 {position: absolute; left: 48vh; top: 20vh; width: 80vh; height: 60vh; background: url(../img/cp2.png) no-repeat; background-size: contain;}
+#sec5_2 .site2 .sbox2 {position: absolute; left: 107vh; top: 45.5vh; width: 47vh; height: 37vh; background: url(../img/cp2_2.png) no-repeat; background-size: contain; z-index: 5; opacity: 1; transition: all 0.6s ease-out;}
+#sec5_2 .site2 .sbox4 p {opacity: 1; transform: translateY(10px); transition: all .6s 1s ease;}
+#sec5_2 .site2 .sbox4 .bt a.cta {opacity: 1; transform: translateX(-10px); transition: all .6s 1.3s ease;}
+#sec5_2 .site2 .sbox4 .bt a.cta:before {background: rgba(214, 116, 113, 0.5);}
+#sec5_2 .site2 .sbox4 .bt:hover a.cta:before {width: 100%; background: rgba(214, 116, 113, 1);}
+
+#sec5_2 .site3 .sbox1 {position: absolute; left: 48vh; top: 20vh; width: 80vh; height: 60vh; background: url(../img/cp3.png) no-repeat; background-size: contain;}
+#sec5_2 .site3 .sbox2 {position: absolute; left: 107vh; top: 45.5vh; width: 47vh; height: 37vh; background: url(../img/cp3_2.png) no-repeat; background-size: contain; z-index: 5; opacity: 1; transition: all 0.6s ease-out;}
+#sec5_2 .site3 .sbox4 p {opacity: 1; transform: translateY(10px); transition: all .6s 1s ease;}
+#sec5_2 .site3 .sbox4 .bt a.cta {opacity: 1; transform: translateX(-10px); transition: all .6s 1.3s ease;}
+#sec5_2 .site3 .sbox4 .bt a.cta:before {background: rgba(171, 152, 191);}
+#sec5_2 .site3  .sbox4 .bt:hover a.cta:before {width: 100%; background: rgba(171, 152, 191, 1);}
+
+#sec5_2 .site4 .sbox1 {position: absolute; left: 48vh; top: 20vh; width: 80vh; height: 60vh; background: url(../img/cp1.png) no-repeat;  background-size: contain;}
+#sec5_2 .site4 .sbox2 {position: absolute; left: 107vh; top: 45.5vh; width: 47vh; height: 37vh; background: url(../img/cp1_2.png) no-repeat; background-size: contain; z-index: 5; opacity: 1; transition: all 0.6s ease-out;}
+#sec5_2 .site4 .sbox4 p {opacity: 1; transform: translateY(10px); transition: all .6s 1s ease;}
+#sec5_2 .site4 .sbox4 .bt a.cta {opacity: 1; transform: translateX(-10px); transition: all .6s 1.3s ease;}
+
+#sec5_2 .site5 .sbox1 {position: absolute; left: 48vh; top: 20vh; width: 80vh; height: 60vh; background: url(../img/cp1.png) no-repeat;  background-size: contain;}
+#sec5_2 .site5 .sbox2 {position: absolute; left: 107vh; top: 45.5vh; width: 47vh; height: 37vh; background: url(../img/cp1_2.png) no-repeat; background-size: contain; z-index: 5; opacity: 1; transition: all 0.6s ease-out;}
+#sec5_2 .site5 .sbox4 p {opacity: 1; transform: translateY(10px); transition: all .6s 1s ease;}
+#sec5_2 .site5 .sbox4 .bt a.cta {opacity: 1; transform: translateX(-10px); transition: all .6s 1.3s ease;}
+
+/* section6 */
+#sec6 {position: fixed; top: 0; left: 100%; width: 3300px; height: 100vh; background: lightyellow;}
+#sec6:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #333;}
+#sec6 .site_title {position: relative; float: left; width: 700px; height: 100vh; position: relative;}
+#sec6 .site_title .st_bom {position: absolute; left: 1.8vh; bottom: 2.2vh;}
+#sec6 .site_title .st_bom .st_bom1 {display: block; font-size: 20vh; line-height: 15vh; font-family: 'Frank Ruhl Libre', serif; overflow: hidden; letter-spacing: -.06em;}
+#sec6 .site_title .st_bom .st_bom2 {display: block; font-size: 20vh; line-height: 15vh; font-family: 'Frank Ruhl Libre', serif; overflow: hidden; letter-spacing: -.06em;}
+#sec6 .site_title .st_bom .st_bom1 > span {position: relative; float: left; transform: translateY(150px); opacity: 0; transition: transform .4s ease-in-out;}
+#sec6 .site_title .st_bom .st_bom2 > span {position: relative; float: left;transform: translateY(150px); opacity: 0; transition: transform .4s ease-in-out;}
+
+#sec6 .ani_wrap {float: left; overflow: hidden;}
+#sec6 .am1 {position: relative; float: left; width: 500px; height: 100vh;}
+#sec6 .am1:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #444;}
+#sec6 .am2 {position: relative; float: left; width: 500px; height: 100vh;}
+#sec6 .am2:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #444;}
+#sec6 .am3 {position: relative; float: left; width: 500px; height: 100vh;}
+#sec6 .am3:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #444;}
+#sec6 .am4 {position: relative; float: left; width: 500px; height: 100vh;}
+#sec6 .am4:before {content: ''; position: absolute; top: 1.8vh; bottom: 1.8vh; right: 0; width: 1px; height: auto; background: #444;}
+#sec6 .am5 {position: relative; float: left; width: 500px; height: 100vh;}
+
+.ani .aTitle {position: absolute; top: 10.8vh; left: 3.8vh; font-family: 'Frank Ruhl Libre', serif; font-size: 50px;}
+.ani .abox1 {position: absolute; top: 25vh; left: 3.8vh; right: 3.8vh; width: 46vh; height: 32vh;}
+.ani .abox1 p {color: #444; font-family: 'Nanum Myeongjo', serif; text-align: justify; font-size: 18px;}
+.ani .abox1 a.ani {position: absolute; bottom: 0; right: 0; display: inline-block; font-family: 'Frank Ruhl Libre', serif; font-size: 2.8vh; color: #000;}
+.ani .abox2 {position: absolute; bottom: 10.8vh; left: 3.8vh; width: 46vh; height: 30vh; background: #ccc;}
+
+.underline-btn {border-radius: 0; color: #000; margin-top: 2rem; font-weight: bold; text-decoration: none;}
+.underline-btn:before, .underline-btn:after {content: ''; display: block; position: absolute; height: 1px; width: 0;}
+.underline-btn:before {transition: width 0s ease,background .4s ease; left: 0; right: 0; bottom: 6px;}
+.underline-btn:after {right: 2.2%; bottom: 6px; background: #000; transition: width .4s ease;}
+.underline-btn:hover:before {width: 97.8%; background: #000; transition: width .4s ease;}
+.underline-btn:hover:after {width: 97.8%; background: 0 0; transition: all 0s ease;}
+
+#sec6.show .site_title .st_bom .st_bom1 > span:nth-child(1) {opacity: 1; transform: translateY(0); transition: transform .6s .19s ease;}
+#sec6.show .site_title .st_bom .st_bom1 > span:nth-child(2) {opacity: 1; transform: translateY(0); transition: transform .6s .22s ease;}
+#sec6.show .site_title .st_bom .st_bom1 > span:nth-child(3) {opacity: 1; transform: translateY(0); transition: transform .6s .25s ease;}
+#sec6.show .site_title .st_bom .st_bom2 > span:nth-child(1) {opacity: 1; transform: translateY(0); transition: transform .6s .28s ease;}
+#sec6.show .site_title .st_bom .st_bom2 > span:nth-child(2) {opacity: 1; transform: translateY(0); transition: transform .6s .31s ease;}
+#sec6.show .site_title .st_bom .st_bom2 > span:nth-child(3) {opacity: 1; transform: translateY(0); transition: transform .6s .34s ease;}
+#sec6.show .site_title .st_bom .st_bom2 > span:nth-child(4) {opacity: 1; transform: translateY(0); transition: transform .6s .37s ease;}
+#sec6.show .site_title .st_bom .st_bom2 > span:nth-child(5) {opacity: 1; transform: translateY(0); transition: transform .6s .4s ease;}
+#sec6.show .site_title .st_bom .st_bom2 > span:nth-child(6) {opacity: 1; transform: translateY(0); transition: transform .6s .43s ease;}
+
+/*am1*/
+#sec6 .am1 .aTitle {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94); }
+#sec6 .am1 .abox1 {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am1 .abox1 p a {transform: translateY(-60px); opacity: 0; transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am1 .abox2 {display: flex; align-items: center; justify-content: center; background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);}
+#sec6 .am1 .abox2 .circle {
+  position: absolute;
+  animation: movex 1s ease-in-out alternate infinite;
+}
+#sec6 .am1 .abox2 .circle > div {
+  background: #fff;
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  animation: movey 1s linear infinite;
+}
+#sec6 .am1 .abox2 .circle:nth-of-type(2)> div { width: 40px; height: 40px;  opacity:0.8;}
+#sec6 .am1 .abox2 .circle:nth-of-type(3)> div { width: 30px; height: 30px;  opacity:0.6;}
+#sec6 .am1 .abox2 .circle:nth-of-type(4)> div { width: 20px; height: 20px;  opacity:0.4;}
+#sec6 .am1 .abox2 .circle:nth-of-type(5)> div { width: 10px; height: 10px;  opacity:0.2;}
+
+#sec6 .am1 .abox2 .circle:nth-of-type(2),
+#sec6 .am1 .abox2 .circle:nth-of-type(2)> div { animation-delay: 0.1s;}
+#sec6 .am1 .abox2 .circle:nth-of-type(3),
+#sec6 .am1 .abox2 .circle:nth-of-type(3)> div { animation-delay: 0.2s;}
+#sec6 .am1 .abox2 .circle:nth-of-type(4),
+#sec6 .am1 .abox2 .circle:nth-of-type(4)> div { animation-delay: 0.3s;}
+#sec6 .am1 .abox2 .circle:nth-of-type(5),
+#sec6 .am1 .abox2 .circle:nth-of-type(5)> div { animation-delay: 0.4s;}
+
+@keyframes movex{
+  0% {transform: translate(-100px,0);}
+  100% {transform: translate(100px,0);}
+}
+@keyframes movey {
+  0% {transform: translate(0,0);}
+  25% {transform: translate(0,-100px);}
+  50% {transform: translate(0,0); border-radius: 0;}
+  75% {transform: translate(0,100px);}
+  100% {transform: translate(0,0);}
+}
+#sec6 .am1.on .aTitle {opacity: 1; transform: translateY(0); transition-delay: .2s;}
+#sec6 .am1.on .abox1 {opacity: 1; transform: translateY(0); transition-delay: .4s;}
+#sec6 .am1.on .abox1 p a {opacity: 1; transform: translateY(0); transition-delay: .8s}
+
+/*am2*/
+#sec6 .am2 .aTitle {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94); }
+#sec6 .am2 .abox1 {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am2 .abox1 p a {transform: translateY(-60px); opacity: 0; transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am2 .abox2 {background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%); overflow: hidden;}
+#sec6 .am2 .abox2 .ocean {height: 5%; width:100%; position:absolute; bottom:0; left:0; background: #015871;}
+#sec6 .am2 .abox2 .ocean .wave {background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; position: absolute; top: -198px; width: 6400px; height: 198px; animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite; transform: translate3d(0, 0, 0);}
+#sec6 .am2 .abox2 .ocean .wave:nth-of-type(2) {top: -175px; animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite; opacity: 1;}
+@keyframes wave {
+    0% {margin-left: 0;}
+    100% {margin-left: -1600px;}
+}
+@keyframes swell {
+    0%, 100% {transform: translate3d(0,-25px,0);}
+    50% {transform: translate3d(0,5px,0);}
+}
+#sec6 .am2.on .aTitle {opacity: 1; transform: translateY(0); transition-delay: .2s;}
+#sec6 .am2.on .abox1 {opacity: 1; transform: translateY(0); transition-delay: .4s;}
+#sec6 .am2.on .abox1 p a {opacity: 1; transform: translateY(0); transition-delay: .8s}
+
+/*am3*/
+#sec6 .am3 .aTitle {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94); }
+#sec6 .am3 .abox1 {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am3 .abox1 p a {transform: translateY(-60px); opacity: 0; transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am3 .abox2 {display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;}
+#sec6 .am3 .abox2 .watch-face {height: 125px;
+  width: 125px;
+  animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;}
+#sec6 .am3 .abox2 .watch-face .circle {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  position: absolute;
+  mix-blend-mode: screen;
+  transform: translate(0, 0);
+  animation: center 6s infinite;
+}
+#sec6 .am3 .abox2 .watch-face .circle:nth-child(odd) {background: #61bea2;}
+#sec6 .am3 .abox2 .watch-face .circle:nth-child(even) {background: #529ca0;}
+#sec6 .am3 .abox2 .watch-face .circle:nth-child(1) {animation: circle-1 4s ease alternate infinite;}
+#sec6 .am3 .abox2 .watch-face .circle:nth-child(2) {animation: circle-2 4s ease alternate infinite;}
+#sec6 .am3 .abox2 .watch-face .circle:nth-child(3) {animation: circle-3 4s ease alternate infinite;}
+#sec6 .am3 .abox2 .watch-face .circle:nth-child(4) {animation: circle-4 4s ease alternate infinite;}
+#sec6 .am3 .abox2 .watch-face .circle:nth-child(5) {animation: circle-5 4s ease alternate infinite;}
+#sec6 .am3 .abox2 .watch-face .circle:nth-child(6) {animation: circle-6 4s ease alternate infinite;}
+
+@keyframes pulse {
+  0% {transform: scale(.15) rotate(180deg);}
+  100% {transform: scale(1);}
+}
+@keyframes circle-1 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-35px, -50px);}
+}
+@keyframes circle-2 {
+  0% {transform: translate(0, 0);}
+  100% { transform: translate(35px, 50px);}
+}
+@keyframes circle-3 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-60px, 0);}
+}
+@keyframes circle-4 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(60px, 0);}
+}
+@keyframes circle-5 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-35px, 50px);}
+}
+@keyframes circle-6 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(35px, -50px);}
+}
+#sec6 .am3.on .aTitle {opacity: 1; transform: translateY(0); transition-delay: .2s;}
+#sec6 .am3.on .abox1 {opacity: 1; transform: translateY(0); transition-delay: .4s;}
+#sec6 .am3.on .abox1 p a {opacity: 1; transform: translateY(0); transition-delay: .8s}
+
+/*am4*/
+#sec6 .am4 .aTitle {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94); }
+#sec6 .am4 .abox1 {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am4 .abox1 p a {transform: translateY(-60px); opacity: 0; transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am4 .abox2 {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec6 .am4 .abox2 .circle {width: 10px; height: 10px; background: #fff; margin: 3px 6px; border-radius: 50%; animation: spin 1s linear infinite; transform-origin: top center;}
+@keyframes spin{
+  0% {transform:rotate(0) scale(1.1);}
+  50% {transform:rotate(180deg) scale(0.2);}
+  100% {transform:rotate(360deg) scale(1.1);}
+}
+#sec6 .am4 .abox2 .row {display: flex; flex: 0 1 100%;}
+#sec6 .am4 .abox2 .row:nth-child(1) .circle {animation-delay: 100ms;}
+#sec6 .am4 .abox2 .row:nth-child(2) .circle {animation-delay: 200ms;}
+#sec6 .am4 .abox2 .row:nth-child(3) .circle {animation-delay: 300ms;}
+#sec6 .am4 .abox2 .row:nth-child(4) .circle {animation-delay: 400ms;}
+#sec6 .am4 .abox2 .row:nth-child(5) .circle {animation-delay: 500ms;}
+#sec6 .am4 .abox2 .row:nth-child(6) .circle {animation-delay: 600ms;}
+#sec6 .am4 .abox2 .row:nth-child(7) .circle {animation-delay: 700ms;}
+#sec6 .am4 .abox2 .row:nth-child(8) .circle {animation-delay: 800ms;}
+#sec6 .am4 .abox2 .row:nth-child(9) .circle {animation-delay: 900ms;}
+#sec6 .am4 .abox2 .row:nth-child(10) .circle {animation-delay: 1000ms;}
+#sec6 .am4 .abox2 .row:nth-child(11) .circle {animation-delay: 1100ms;}
+#sec6 .am4 .abox2 .row:nth-child(12) .circle {animation-delay: 1200ms;}
+
+#sec6 .am4.on .aTitle {opacity: 1; transform: translateY(0); transition-delay: .2s;}
+#sec6 .am4.on .abox1 {opacity: 1; transform: translateY(0); transition-delay: .4s;}
+#sec6 .am4.on .abox1 p a {opacity: 1; transform: translateY(0); transition-delay: .8s}
+
+/*am5*/
+#sec6 .am5 .aTitle {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94); }
+#sec6 .am5 .abox1 {opacity: 0; transform: translateY(60px); transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am5 .abox1 p a {transform: translateY(-60px); opacity: 0; transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
+#sec6 .am5 .abox2 {background: radial-gradient(#fff, #ffd972); overflow: hidden; perspective: 500;}
+#sec6 .am5 .abox2 .cube {animation: rotate 7000ms linear infinite; bottom: 0; height: 100px; left: 0; margin: auto; position: absolute; transform-style: preserve-3d; right: 0; top: 0; width: 100px;}
+@keyframes rotate {
+	100% {transform: rotateY(360deg) rotateX(720deg) rotateZ(1080deg);}
+}
+#sec6 .am5 .abox2 .cube .face {height: 100%; left: 0; position: absolute; top: 0; width: 100%;}
+#sec6 .am5 .abox2 .cube .front {background: #460202; transform: translateZ(50px);}
+#sec6 .am5 .abox2 .cube .back {background: #7e0000; transform: translateZ(-50px);}
+#sec6 .am5 .abox2 .cube .left {background: #790000; transform: translateX(-50px) rotateY(90deg);}
+#sec6 .am5 .abox2 .cube .right {background: #a70707; transform: translateX(50px) rotateY(90deg);}
+#sec6 .am5 .abox2 .cube .top {background: #af0505; transform: translateY(-50px) rotateX(90deg);}
+#sec6 .am5 .abox2 .cube .bottom {background: #cb0606; transform: translateY(50px) rotateX(90deg);}
+
+#sec6 .am5.on .aTitle {opacity: 1; transform: translateY(0); transition-delay: .2s;}
+#sec6 .am5.on .abox1 {opacity: 1; transform: translateY(0); transition-delay: .4s;}
+#sec6 .am5.on .abox1 p a {opacity: 1; transform: translateY(0); transition-delay: .8s}
+
+/* modal */
+#modal {
+	transform: scale(0);
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+}
+#modal .modal-bg {
+	background-color: rgba(0,0,0,0.7);
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+#modal .modal-bg > div {
+	position: relative;
+	background-color: #fff;
+	padding: 40px;
+	width: 800px;
+	display: inline-block;
+    position: absolute;
+    top: 20vh;
+    transform: translateX(20700px);
+}
+#modal.one .modal-bg > div:nth-child(1){z-index: 10;}
+#modal.one .modal-bg > div:nth-child(2){z-index: 10;}
+#modal.one .modal-bg > div:nth-child(3){z-index: 10;}
+#modal.one .modal-bg > div:nth-child(4){z-index: 10;}
+#modal.one .modal-bg > div:nth-child(5){z-index: 10;}
+#modal.one .modal-bg > div h2 {
+	font-size: 30px; margin-bottom: 10px;
+}
+#modal .modal-bg > div p {
+	font-size: 18px; line-height: 1.3;
+}
+#modal .modal-bg > div .close {
+	position: absolute; top: 10px; right: 10px;
+	background:#000; padding: 10px; 
+	border-radius: 50%;
+}
+#modal .modal-bg > div .close svg {
+	width: 24px; fill: #fff; vertical-align: top;
+}
+
+#modal.one {
+	transform: scaley(0.005) scalex(0);
+	animation: unfoldIn 1s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+#modal.one.out {
+	transform: scale(1);
+	animation: unfoldOut 1s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+
+@keyframes unfoldIn {
+	0%   {transform: scaley(0.005) scalex(0); }
+	50%  {transform: scaley(0.005) scalex(1); }
+	100% {transform: scaley(1) scalex(1); }
+}
+@keyframes unfoldOut {
+	0%   {transform: scaley(1) scalex(1) }
+	50%  {transform: scaley(0.005) scalex(1); }
+	100% {transform: scaley(0.005) scalex(0); }
+}
+#modal.one .modal-bg > div {
+	/*transform: scale(0);*/
+	/*animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;*/
+}
+#modal.one.out .modal-bg > div {
+	transform: scale(0);
+	animation: zoomOut 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+
+@keyframes zoomIn {
+	0% {transform: scale(0);}
+	100% {transform: scale(1);}
+}
+@keyframes zoomOut {
+	0% {transform: scale(1);}
+	100% {transform: scale(0);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
