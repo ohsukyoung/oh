@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꿈꾸냥 +</title>
+    <meta name="Keywords" content="todolist" />
+    <meta name="Description" content="배경 일러스트: 이지선/노마드코더의 \'바닐라 JS로 크롬 앱 만들기\'을 통해 만든 todolist입니다." />
+    <meta name="robots" content="todolist" />
+    <meta http-equiv="Title" content="꿈꾸냥+" />
+    <meta http-equiv="Author" content="오수경" />
+
+    <!-- webfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style11.css">
+</head>
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+        <div class="header">
+            <div class="inner">
+                <h1 class="title">
+                    꿈꾸냥 +
+                </h1>
+                <!-- weather -->
+                <div class="box weather">
+                    <ul class="weather_list">
+                        <li>
+                            <span class="w_txt">날씨</span>
+                        </li>
+                        <li>
+                            <span class="temp">온도</span>
+                        </li>
+                        <li>
+                            <span class="city">지역</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <div class="container">
+            <div class="box main_bg">
+                <img src="img11/dream001.jpg" alt="">
+            </div>
+            <div class="inner">
+                <!-- main_bg -->
+                <div class="con">
+                    <!-- login -->
+                    <div class="box login">
+                        <form>
+                            <input class="input_ty01" required maxlength="15" type="text" placeholder="이름을 적어주세요.">
+                            <button class="btn_base">입력</button>
+                        </form>
+                        <div class="greeting blind">
+                            Hello {이름}
+                        </div>
+                    </div>
+                    
+                    <!-- clock -->
+                    <div class="box clock">
+                        <span class="clck_txt">
+                            00:00:00
+                        </span>
+                    </div>
+                    <!-- todo -->
+                    <div class="box todo">
+                        <div class="todo_inner">
+                            <form>
+                                <input type="text" placeholder="기록하고 싶은 내용을 작성해주세요." required>
+                                <button class="btn_base">입력</button>
+                            </form>
+                            <ul class="todo_list">
+                                <li class="default">todo list 상세 내용 😊 </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- quote -->
+                    <div class="box quote">
+                        <div class="quote_inner ani_scroll">
+                            <span class="quote_txt">좋은 글귀</span>
+                            <span class="quote_desc">출처</span>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <!-- //container -->
+        <div class="footer">
+            <div class="inner">
+                <ul class="foo_info">
+                    <li>
+                        <span class="f_title">일러스트</span>
+                        <span class="f_txt">이지선 작가님</span>
+                    </li>
+                    <li>
+                        <span class="f_title">정보</span>
+                        <span class="f_txt">노마드코더의 '바닐라 JS로 크롬 앱 만들기'을 통해 만든 todolist</span>
+                    </li>
+                    <li>
+                        <span class="f_title">구현내용</span>
+                        <span class="f_txt">입력받은 이름 저장, 배경 랜덤 노출, 명언 랜덤 출력, Todo 리스트, 위치기반 날씨</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //wrap -->
+    <!-- js -->
+    <script src="js/main.js"></script>
+</body>
+</html>

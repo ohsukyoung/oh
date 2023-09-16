@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+
+  <body>
+    <h1>Random Number Game</h1>
+    <form class="rd_form">
+      <div class="rd_game">
+        <div>
+          Generate a number between 0 and
+          <input class="last_num" type="number" />
+        </div>
+        <div>
+          Guess the number:
+          <input class="user_num" type="number" />
+          <button class="rd_btn">play!</button>
+        </div>
+        <div class="print hidden">
+            <div>
+                <p>You chose: <span class="user_print"></span>, the machine chose: <span class="com_print"></p>
+            </div>
+            <strong class="result"></strong>
+        </div>
+      </div>
+    </form>
+    <script src="src/inedex.js"></script>
+  </body>
+</html>
