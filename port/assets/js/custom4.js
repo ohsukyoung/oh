@@ -28,9 +28,11 @@ $(window).scroll(function(){
     //sec1: 날짜표시
     var d = new Date().toLocaleString();
         //2019. 11. 1. 오후 1:46:22
-        var year = d.slice(0,5);
-        var month = d.slice(6,9);
-        var day = d.slice(10,13);
+        //2024. 2. 5. 오후 11:52:36
+        var year = d.slice(0,4);
+        var month = d.slice(6,7);
+        var day = d.slice(8,13);
+        console.log(year + ":" + month + ":" + day);
         $("#sec3 .me2 .date p.d1 > span:nth-child(1)").text(month.slice(0,1));
         $("#sec3 .me2 .date p.d1 > span:nth-child(2)").text(month.slice(1,2));
         $("#sec3 .me2 .date p.d2 > span:nth-child(1)").text(day.slice(0,1));
@@ -310,7 +312,8 @@ $(window).scroll(function(){
 
 //sec1: 현재시간 표시
 setInterval(function showClock(){
-    var t = new Date().toLocaleString();  
+    var t = new Date().toLocaleString(); 
+    console.log(t); 
     var time = t.slice(16,24);
     if(t.slice(14,16) == "오전") $(".time").text(time+" "+"AM");
     else $(".time").text(time+" "+"PM");
